@@ -10,7 +10,7 @@
 header {
     background-color: #669bbc;
     color: white; 
-    padding: 15px;
+    padding: 3%;
 }
 header h1{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -43,11 +43,11 @@ nav a{
     background-size: cover;
     background-repeat: no-repeat;
     height: 600px;
+    color: white;
+    text-align: center;
 }
 
 #principal h2{
-    color: white;
-    text-align: center;
     padding-top: 200px;
     padding-bottom: 30px;
 }
@@ -55,18 +55,16 @@ nav a{
 .icon {
     height: 80px;
     background-color: #0e6ba8; 
-    border-radius: 50px;
-    padding: 10px;   
+    border-radius: 50%;
+    padding: 10px;  
+    
 }
-.icon_e_info{
-    text-align: center;
-    padding: 30px;
-    color: white;
-}
+
 .info{
     display: flex;
     flex-direction: row;
     justify-content:center;
+    gap: 30px; 
 }
 
 
@@ -75,7 +73,6 @@ nav a{
 #cultura{
     padding: 30px;
     margin: 30px;
-    text-align: justify;
 }
 
 #cultura .cultura_info{
@@ -94,42 +91,39 @@ nav a{
 
 #cultura img{
     height: 450px;
+    max-width: 50%;
 }
 
 #cultura p{
-    padding-right: 100px;
+    text-align: justify;
+    min-width: 300px;
 }
 
 
 /*Ejemplos*/
 .ejemplos_cultura{
     display:flex;
-    flex-direction: row;
+    justify-content: center;
+    /*align-items: center;*/
     margin: 50px;
     flex-wrap: wrap;
-    /*align-items: center;*/
+    text-align: center;
 }
 
 .ejemplo{
     background-color: #bde0fe;
     margin: 10px;
     padding: 20px;
-    width: 600px;
-    text-align: center;
+    width: 450px;
 }
 
 .ejemplo img{
-    height: 340px;
-    padding: 10px;
-    
+    height: 250px;
+    padding: 10px;  
 }
 
 .ejemplo p{
     text-align: justify;
-}
-
-.ejemplo h3{
-    text-align: center;
 }
 
 
@@ -138,26 +132,26 @@ footer{
     background-color: #669bbc;
     color: white;
     text-align: center;
-    padding: 25px;
+    padding: 30px;
 }
 
 
 /*Museos*/
 #museos{
     margin: 30px;
+    text-align: center;
 }
 
 .todos_museos{
     display:flex;
+    justify-content: center;
     flex-direction: row;
-    margin: 50px;
+    margin: 30px;
     flex-wrap: wrap;
-    /*align-items: center;*/
 }
 
 #museos h2{
     color:#0e6ba8;
-    text-align: center;
     text-transform: uppercase;
     padding: 10px;
 }
@@ -165,33 +159,28 @@ footer{
 .ejemplo_museo{
     margin: 10px;
     padding: 20px;
-    width: 600px;
-    text-align: center;
-
+    width: 450px;
 }
 
 .ejemplo_museo h3{
     color: #D4AF37;
 }
 .ejemplo_museo img{
-    height: 340px;
+    height: 250px;
     padding: 10px;
-    
 }
+
 
 /*Contacto*/
 .formulario{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     font-weight: bold;
     color: white; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
-h2{
+#contacto h2, #seccion2 h2{
     color: #0e6ba8;
     margin: 20px;
     text-align: center;
@@ -214,7 +203,7 @@ form fieldset .entrada{
 }
 
 form fieldset .mensaje{
-    height: 200px;
+    height: 150px;
     display: block;
     width: 580px;
 }
@@ -223,7 +212,6 @@ form fieldset .mensaje{
     background-color: #0e6ba8;
     font-weight: bold;
     color: white; 
-    /*width: 200px;*/
     border:none;
     padding: 12px;
     margin-top: 20px;
@@ -239,12 +227,8 @@ form fieldset .mensaje{
     flex-direction: row;
     justify-content: center;
     gap: 100px;
-}
-
-.redes{
     text-align: center;
 }
-
 .redes img{
     width: 75px;
 }
