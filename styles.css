@@ -178,3 +178,73 @@ footer{
     padding: 10px;
     
 }
+
+/*Contacto*/
+.formulario{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: bold;
+    color: white; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2{
+    color: #0e6ba8;
+    margin: 20px;
+    text-align: center;
+}
+
+form {
+    background-color: #adb5bd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 600px;
+}
+
+form fieldset{
+    border:none;
+}
+
+form fieldset .entrada{
+    display: block;
+    width: 580px;
+}
+
+form fieldset .mensaje{
+    height: 200px;
+    display: block;
+    width: 580px;
+}
+
+.boton{
+    background-color: #0e6ba8;
+    font-weight: bold;
+    color: white; 
+    /*width: 200px;*/
+    border:none;
+    padding: 12px;
+    margin-top: 20px;
+    width: 580px;
+}
+
+#seccion2{
+    padding: 30px;
+}
+
+.all_redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+}
+
+.redes{
+    text-align: center;
+}
+
+.redes img{
+    width: 75px;
+}
