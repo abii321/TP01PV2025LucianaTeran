@@ -96,6 +96,10 @@ nav a{
     height: 450px;
 }
 
+#cultura p{
+    padding-right: 100px;
+}
+
 
 /*Ejemplos*/
 .ejemplos_cultura{
@@ -134,6 +138,43 @@ footer{
     background-color: #669bbc;
     color: white;
     text-align: center;
-    
+    padding: 25px;
 }
 
+
+/*Museos*/
+#museos{
+    margin: 30px;
+}
+
+.todos_museos{
+    display:flex;
+    flex-direction: row;
+    margin: 50px;
+    flex-wrap: wrap;
+    /*align-items: center;*/
+}
+
+#museos h2{
+    color:#0e6ba8;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.ejemplo_museo{
+    margin: 10px;
+    padding: 20px;
+    width: 600px;
+    text-align: center;
+
+}
+
+.ejemplo_museo h3{
+    color: #D4AF37;
+}
+.ejemplo_museo img{
+    height: 340px;
+    padding: 10px;
+    
+}
