@@ -1,72 +1,80 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
-    <!--Encabezado-->
-    <header>
-        <h1>Argentina</h1>
-    </header>
-    
-    <!--Barra de navegacion-->
-    <nav>
-        <a href="index.html">Principal</a>
-        <a href="museos.html">Museos</a>
-        <a href="contacto.html">Contacto</a>
-    </nav>
+    <div class="containter">
+        <!--Encabezado-->
+        <header>
+            <h1>Argentina</h1>
+        </header>
 
-    <!--Seccion 1-->
-    <section id="contacto">
-        <h2>Formulario de Contacto</h2>
-        <div class="formulario">
-        <form>
-            <fieldset>
-                <label>Nombre</label>
-                <input class="entrada" type="text" placeholder="Tu nombre"> <br>
-                <label>Apellido</label>
-                <input class="entrada" type="text" placeholder="Tu apellido"> <br>
-                <label>Correo</label>
-                <input class="entrada" type="email" placeholder="Tu correo electronico"> <br>
-                <label>Mensaje</label>
-                <textarea class="mensaje" placeholder="Tu opinion"></textarea>
-                <label>Opcionales</label> <br>
-                <input class="check" type="checkbox">
-                <label>¿Desea recibir correos semanales?</label> 
-                <input class="check" type="checkbox">
-                <label>¿Desea que el correo sea anonimo?</label> <br>
-                <input class="boton" type="submit" value="Enviar">
-            </fieldset>
-        </form>
-        </div>
-    </section>
+        <!--Barra de navegacion-->
+        <nav>
+            <a href="index.html">Principal</a>
+            <a href="museos.html">Museos</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
 
-    <!--Seccion 2-->
-    <section id="seccion2"> 
-        <h2>Redes Sociales</h2>
-        <div class="all_redes">
-            <div class="redes">
-                <p>Instagram</p>
-                <img src="img/instagram.png" alt="imagen illustrativa">
+        <!--Seccion 1-->
+        <section id="contacto">
+            <h2>Formulario</h2>
+            <div class="formulario">
+                <form>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" placeholder="Tu nombre" required> <br>
+                    
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" placeholder="Tu apellido" required> <br>
+                    
+                    <label for="correo">Correo</label>
+                    <input type="email" id="correo" placeholder="Tu correo electronico" required> <br>
+                    
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="6" placeholder="Tu opinion" required></textarea>
+
+                    <label>Encuesta Opcional</label> <br>
+                    <input class="check" type="checkbox">
+                    <label>¿Desea recibir correos semanales?</label>
+                    <input class="check" type="checkbox">
+
+                        <label>¿Desea que el correo sea anonimo?</label> <br>
+
+                    <button type="submit">Enviar</button>
+                </form>
             </div>
-            <div class="redes">
-                <p>Facebook</p>
-                <img src="img/facebook.png" alt="imagen ilustrativa">
-             </div>
-            <div class="redes">
-                <p>X</p>
-                <img src="img/gorjeo.png" alt="imagen ilustrativa">
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <footer>
-        <p>©2025 Todos los derechos reservados. </p>
-        <p>Luciana Abigail Teran. Escuela de Minas</p>
-    </footer>
+        <!--Seccion 2-->
+        <section id="seccion2">
+            <h2>Redes Sociales</h2>
+            <div class="all_redes">
+                <div class="redes">
+                    <p>Instagram</p>
+                    <img src="assets/images/instagram.png" alt="imagen illustrativa">
+                </div>
+                <div class="redes">
+                    <p>Facebook</p>
+                    <img src="assets/images/facebook.png" alt="imagen ilustrativa">
+                </div>
+                <div class="redes">
+                    <p>X</p>
+                    <img src="assets/images/gorjeo.png" alt="imagen ilustrativa">
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>©2025 Todos los derechos reservados. </p>
+            <p>Luciana Abigail Teran. Escuela de Minas</p>
+        </footer>
+    </div>
 </body>
+
 </html>
