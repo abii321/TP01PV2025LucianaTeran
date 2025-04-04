@@ -71,15 +71,15 @@ nav a{
 /*Principal*/
 /*Cultura*/
 #cultura{
-    padding: 30px;
-    margin: 30px;
+    padding: 10px;
+    margin: 20px;
 }
 
 #cultura .cultura_info{
-    display: flex;
+    /*display: flex;
     flex-direction: row;
-    gap: 30px;
     align-items: center;
+    min-width: 70vw;*/
 }
 
 #cultura h2{
@@ -92,13 +92,15 @@ nav a{
 #cultura img{
     width: auto;
     max-width: 50vw;
-    /*height: 450px;
-    max-width: 50%;*/
+    padding: 5px;
+    display: block;
+    margin: auto;
 }
 
 #cultura p{
     text-align: justify;
     min-width: 300px;
+    padding: 10px 30px;
 }
 
 
@@ -178,6 +180,12 @@ footer{
 
 
 /*Contacto*/
+#contacto h2, #seccion2 h2{
+    color: #0e6ba8;
+    margin: 20px;
+    text-align: center;
+}
+
 .formulario{
     display:flex;
     justify-content: center;
@@ -186,50 +194,34 @@ footer{
     color: white; 
 }
 
-#contacto h2, #seccion2 h2{
-    color: #0e6ba8;
-    margin: 20px;
-    text-align: center;
-}
-
 form {
     background-color: #adb5bd;
     border-radius: 10px;
-    padding: 20px;
+    padding: 40px;
     width: 60%;
     min-width: 300px;
 }
 
-form fieldset{
-    border:none;
-}
-
-form fieldset .entrada{
+label{
     display: block;
-    width: 96%;
 }
 
-form fieldset .mensaje{
-    height: 150px;
-    display: block;
-    width: 96%;
-}
-form fieldset .check:hover{
-    cursor:pointer;
-}
-
-.boton{
-    background-color: #0e6ba8;
-    font-weight: bold;
-    color: white; 
-    border:none;
-    padding: 12px;
-    margin-top: 20px;
-    width: 94%;
-}
-.boton:hover{
+button:hover{
     cursor: pointer;
 }
+button{
+    background-color:#0e6ba8;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    width: 100%;;
+}
+
+
+#nombre, #apellido, #correo, #mensaje, #pais{
+    width: 100%;
+}
+
 
 #seccion2{
     padding: 30px;
@@ -246,3 +238,4 @@ form fieldset .check:hover{
     width: auto;
     max-width: 8vw;
 }
+

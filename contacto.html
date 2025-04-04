@@ -29,24 +29,43 @@
                 <form>
                     <label for="nombre">Nombre</label>
                     <input type="text" id="nombre" placeholder="Tu nombre" required> <br>
+                    <br>
                     
                     <label for="apellido">Apellido</label>
                     <input type="text" id="apellido" placeholder="Tu apellido" required> <br>
-                    
+                    <br>
+
                     <label for="correo">Correo</label>
                     <input type="email" id="correo" placeholder="Tu correo electronico" required> <br>
-                    
+                    <br>
+
                     <label for="mensaje">Mensaje</label>
                     <textarea id="mensaje" name="mensaje" rows="6" placeholder="Tu opinion" required></textarea>
+                    <br> <br>
 
-                    <label>Encuesta Opcional</label> <br>
-                    <input class="check" type="checkbox">
-                    <label>¿Desea recibir correos semanales?</label>
-                    <input class="check" type="checkbox">
+                    <label>Encuesta Opcional</label>
+                    <label for="calificacion">¿Como calificarias este sitio web?</label>
+                    <label><input type="radio" name="calificacion" value="excelente"> Excelente</label>
+                    <label><input type="radio" name="calificacion" value="buena"> Buena</label>
+                    <label><input type="radio" name="calificacion" value="regular"> Regular</label>
+                    <label><input type="radio" name="calificacion" value="mala"> Mala</label>
+                    <br>
 
-                        <label>¿Desea que el correo sea anonimo?</label> <br>
+                    <label>¿Recomendadrias el sitio web?</label>
+                    <label><input type="radio" id="recomendacion" name="recomendacion"> Si</label>
+                    <label><input type="radio" id="recomendacion" name="recomendacion">No</label>
+                    <br>
 
-                    <button type="submit">Enviar</button>
+                    <label>Pais de origen</label>
+                    <select id="pais" name="pais" multiple>
+                        <option value="ar">Argentina</option>
+                        <option value="mx">Mexico</option>
+                        <option value="es">España</option>
+                        <option value="otro">Otro pais</option>
+                    </select>
+                    <br> <br>
+
+                    <button type="submit" onclick="enviarFormulario()">Enviar</button>
                 </form>
             </div>
         </section>
@@ -74,6 +93,26 @@
             <p>©2025 Todos los derechos reservados. </p>
             <p>Luciana Abigail Teran. Escuela de Minas</p>
         </footer>
+
+
+        <script>
+            // Funcion que se ejecuta cuando se hace click en el boton
+            function enviarFormulario(event) {
+                // Evitar que el formulario se envie y la pagina se recargue
+                event.preventDefault();
+
+                // Obtener los valores de los inputs
+                var nombre = document.getElementById("nombre").value;
+                var apellido = document.getElementById("apellido").value;
+
+                // Mostrar  los valores en la consola
+                console.log("Nombre:", nombre);
+                console.log("Apellido:", apellido);
+
+                alert("nombre: " + nombre + " y apellido: " + apellido);
+            }
+        </script>
+
     </div>
 </body>
 
