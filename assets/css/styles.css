@@ -75,13 +75,6 @@ nav a{
     margin: 20px;
 }
 
-#cultura .cultura_info{
-    /*display: flex;
-    flex-direction: row;
-    align-items: center;
-    min-width: 70vw;*/
-}
-
 #cultura h2{
     color: #0e6ba8;
     text-transform: uppercase;
@@ -95,6 +88,7 @@ nav a{
     padding: 5px;
     display: block;
     margin: auto;
+    border-radius: 20px;
 }
 
 #cultura p{
@@ -124,7 +118,6 @@ nav a{
 .ejemplo img{
     width: auto;
     max-width: 100%;
-    /*height: 250px;*/
     padding: 10px;  
 }
 
@@ -174,7 +167,6 @@ footer{
 .ejemplo_museo img{
     width: auto;
     max-width: 100%;
-    /*height: 250px;*/
     padding: 10px;
 }
 
@@ -218,7 +210,7 @@ button{
 }
 
 
-#nombre, #apellido, #correo, #mensaje, #pais{
+#nombre, #apellido, #correo, #mensaje, #pais, #numero{
     width: 100%;
 }
 

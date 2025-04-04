@@ -44,7 +44,7 @@
                     <br> <br>
 
                     <label>Encuesta Opcional</label>
-                    <label for="calificacion">¿Como calificarias este sitio web?</label>
+                    <label>¿Como calificarias este sitio web?</label>
                     <label><input type="radio" name="calificacion" value="excelente"> Excelente</label>
                     <label><input type="radio" name="calificacion" value="buena"> Buena</label>
                     <label><input type="radio" name="calificacion" value="regular"> Regular</label>
@@ -52,12 +52,12 @@
                     <br>
 
                     <label>¿Recomendadrias el sitio web?</label>
-                    <label><input type="radio" id="recomendacion" name="recomendacion"> Si</label>
-                    <label><input type="radio" id="recomendacion" name="recomendacion">No</label>
+                    <label><input type="radio" name="recomendacion" value="si"> Si</label>
+                    <label><input type="radio" name="recomendacion" value="no">No</label>
                     <br>
 
                     <label>Pais de origen</label>
-                    <select id="pais" name="pais" multiple>
+                    <select id="pais" name="pais">
                         <option value="ar">Argentina</option>
                         <option value="mx">Mexico</option>
                         <option value="es">España</option>
@@ -97,7 +97,7 @@
 
         <script>
             // Funcion que se ejecuta cuando se hace click en el boton
-            function enviarFormulario(event) {
+            function enviarFormulario() {
                 // Evitar que el formulario se envie y la pagina se recargue
                 event.preventDefault();
 
@@ -109,7 +109,7 @@
                 console.log("Nombre:", nombre);
                 console.log("Apellido:", apellido);
 
-                alert("nombre: " + nombre + " y apellido: " + apellido);
+                alert("Nombre: " +nombre+ " y Apellido: " +apellido);
             }
         </script>
 
