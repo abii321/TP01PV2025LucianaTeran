@@ -26,7 +26,7 @@
         <section id="contacto">
             <h2>Formulario</h2>
             <div class="formulario">
-                <form>
+                <form onsubmit="enviarFormulario()">
                     <label for="nombre">Nombre</label>
                     <input type="text" id="nombre" placeholder="Tu nombre" required> <br>
                     <br>
@@ -58,6 +58,7 @@
 
                     <label>Pais de origen</label>
                     <select id="pais" name="pais">
+                        <option value=""></option>
                         <option value="ar">Argentina</option>
                         <option value="mx">Mexico</option>
                         <option value="es">España</option>
@@ -65,7 +66,7 @@
                     </select>
                     <br> <br>
 
-                    <button type="submit" onclick="enviarFormulario()">Enviar</button>
+                    <button type="submit">Enviar</button>
                 </form>
             </div>
         </section>
@@ -104,13 +105,19 @@
                 // Obtener los valores de los inputs
                 var nombre = document.getElementById("nombre").value;
                 var apellido = document.getElementById("apellido").value;
+                var correo = document.getElementById("correo").value;
+                var mensaje = document.getElementById("mensaje").value;
 
                 // Mostrar  los valores en la consola
                 console.log("Nombre:", nombre);
                 console.log("Apellido:", apellido);
+                console.log("Correo:", correo);
+                console.log("Mesaje:", mensaje)
 
-                alert("Nombre: " +nombre+ " y Apellido: " +apellido);
+                alert("Nombre: " +nombre+ " y Apellido: " +apellido+". Correo: "+correo+ " y Mensaje: "+mensaje);
             }
+
+
         </script>
 
     </div>
